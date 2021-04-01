@@ -2,15 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Pesa as PesaFacade;
-// use Openpesa\Pesa\PesaFacade;
+use Openpesa\Pesa\PesaFacade;
 use Illuminate\Http\Request;
-// use Openpesa\Pesa\Facades\Pesa as FacadesPesa;
-
 
 class PayController extends Controller
 {
-    public function pay()
+    public function pay(Request $reuest)
     {
         $data_c2b = [
             'input_Amount' => 2033,
